@@ -74,7 +74,7 @@ jobs:
       - name: push to heroku
         env : 
             HEROKU_REGISTRY_URL: registry.heroku.com
-            HEROKU_TOKEN : ${{ secrets.HEROKU_TOKEN }}
+            HEROKU_TOKEN : c3f93953-ae02-41d3-a211-fa9920ab911d
         run : |
             docker login --username=_ --password $HEROKU_TOKEN $HEROKU_REGISTRY_URL
             export HEROKU_API_KEY=$HEROKU_TOKEN
